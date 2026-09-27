@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dinar Personal OS
 
 Personal productivity, finance, daily-target, and time-tracking PWA.
@@ -88,3 +89,6 @@ Semua sheet dibuat otomatis oleh fungsi `setup()`.
 
 Fitur yang cocok ditambah setelah MVP stabil:
 calendar view, recurring task, monthly budget, category budget, savings goal, timer start/stop, Pomodoro, weekly review, streak, notification, recurring daily template, backup XLSX/CSV, dark/light theme, biometrics via native wrapper, and calendar sync.
+=======
+# dinar-personal-os
+>>>>>>> 58b5f19e6dac6acbc04ea3fa8a8e9164865e2d24
