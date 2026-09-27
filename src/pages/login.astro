@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+const error = Astro.url.searchParams.get("error");
+---
+<Layout title="Login • Dinar OS">
+  <main class="min-h-screen grid place-items-center px-5">
+    <section class="w-full max-w-sm rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl">
+      <div class="mb-8">
+        <div class="mb-3 grid h-12 w-12 place-items-center rounded-2xl bg-white text-lg font-black text-black">D</div>
+        <h1 class="text-2xl font-bold">Dinar Personal OS</h1>
+        <p class="mt-2 text-sm text-zinc-400">Masuk ke ruang pribadi produktivitas dan keuanganmu.</p>
+      </div>
+
+      {error && <div class="mb-4 rounded-xl border border-red-900 bg-red-950/50 p-3 text-sm text-red-200">Password salah.</div>}
+
+      <form method="POST" action="/api/login" class="space-y-4">
+        <label class="block">
+          <span class="mb-2 block text-sm text-zinc-300">Password</span>
+          <input name="password" type="password" required autofocus
+            class="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 outline-none focus:border-zinc-600" />
+        </label>
+        <button class="w-full rounded-xl bg-white px-4 py-3 font-semibold text-black hover:bg-zinc-200">
+          Masuk
+        </button>
+      </form>
+    </section>
+  </main>
+</Layout>
